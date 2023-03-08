@@ -38,4 +38,12 @@ class OperacionesTDDTest {
         assertEquals("4",prueba.suma("1,1,2"));
 
     }
+    @Test
+    void VacioDespuesDeComa() {
+        OperacionesTDD prueba= new OperacionesTDD();
+        prueba.suma("1,2,");
+        System.out.println(prueba.suma("1,2,"));
+        assertEquals("-1",prueba.suma("1,2,"));
+
+    }
 }
