@@ -25,4 +25,25 @@ class FizzBuzzTest {
         System.out.println(prueba.Prueba(3));
         assertEquals("Fizz",prueba.Prueba(3));
     }
+    @Test
+    void pruebaN4() {
+        FizzBuzz prueba= new FizzBuzz();
+        prueba.Prueba(4);
+        System.out.println(prueba.Prueba(4));
+        assertEquals("4",prueba.Prueba(4));
+    }
+    @Test
+    void pruebaN5() {
+        FizzBuzz prueba= new FizzBuzz();
+        prueba.Prueba(5);
+        System.out.println(prueba.Prueba(5));
+        assertEquals("Buzz",prueba.Prueba(5));
+    }
+    @Test
+    void pruebaN6() {
+        FizzBuzz prueba= new FizzBuzz();
+        prueba.Prueba(6);
+        System.out.println(prueba.Prueba(6));
+        assertEquals("Fizz",prueba.Prueba(6));
+    }
 }
