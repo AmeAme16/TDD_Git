@@ -21,4 +21,21 @@ class OperacionesTDDTest {
         assertEquals("1",prueba.suma("1"));
 
     }
+
+    @Test
+    void sumaN1yN2() {
+        OperacionesTDD prueba= new OperacionesTDD();
+        prueba.suma("1,2");
+        System.out.println(prueba.suma("1,2"));
+        assertEquals("3",prueba.suma("1,2"));
+
+    }
+    @Test
+    void sumaN1yN1yN2() {
+        OperacionesTDD prueba= new OperacionesTDD();
+        prueba.suma("1,1,2");
+        System.out.println(prueba.suma("1,1,2"));
+        assertEquals("4",prueba.suma("1,1,2"));
+
+    }
 }
