@@ -55,4 +55,13 @@ class OperacionesTDDTest {
         assertEquals("-1 numero negativo no permitido",prueba.suma("1,2,-2"));
 
     }
+
+    @Test
+    void NumeroSuperiorAMil() {
+        OperacionesTDD prueba= new OperacionesTDD();
+        prueba.suma("5,1002");
+        System.out.println(prueba.suma("5,1002"));
+        assertEquals("5 numero superior a 1000 ignorado",prueba.suma("5,1002"));
+
+    }
 }

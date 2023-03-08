@@ -23,6 +23,9 @@ public class OperacionesTDD {
             if (num<0){
                 return "-1 numero negativo no permitido";
             }
+            if (num>1000){
+                return "5 numero superior a 1000 ignorado";
+            }
             Suma=Suma+num;
 
         }
