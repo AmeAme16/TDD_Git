@@ -20,6 +20,9 @@ public class OperacionesTDD {
 
         for (int i = 0; i < N.length; i++) {
             num= Integer.parseInt(N[i]);
+            if (num<0){
+                return "-1 numero negativo no permitido";
+            }
             Suma=Suma+num;
 
         }

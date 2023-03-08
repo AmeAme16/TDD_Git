@@ -46,4 +46,13 @@ class OperacionesTDDTest {
         assertEquals("-1",prueba.suma("1,2,"));
 
     }
+
+    @Test
+    void NumerosNegativos() {
+        OperacionesTDD prueba= new OperacionesTDD();
+        prueba.suma("1,2,-2");
+        System.out.println(prueba.suma("1,2,-2"));
+        assertEquals("-1 numero negativo no permitido",prueba.suma("1,2,-2"));
+
+    }
 }
